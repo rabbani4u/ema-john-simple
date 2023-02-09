@@ -20,7 +20,7 @@ function Shop() {
   };
 
   return (
-    <div className="shop-container">
+    <div className="twin-container">
       <div className="products-container">
         {products.map(product => (
           <Product
