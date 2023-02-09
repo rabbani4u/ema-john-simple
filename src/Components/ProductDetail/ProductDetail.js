@@ -10,7 +10,7 @@ function ProductDetail() {
   return (
     <div>
       <h2>{productKey} ProductDetail</h2>
-      <Product product={product} />
+      <Product showAddToCart={false} product={product} />
     </div>
   );
 }
