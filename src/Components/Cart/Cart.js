@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Cart(props) {
   const cart = props.cart;
-  const total = cart.reduce((total, pd) => total + pd.price, 0);
+  const total = cart.reduce((total, product) => total + product.price, 0);
 
   let shipping = 0;
   if (total > 500) {
@@ -16,6 +16,7 @@ function Cart(props) {
 
   const tax = (total * 0.1).toFixed(2);
   const grandTotal = (total + shipping + Number(tax)).toFixed(2);
+  // console.log(typeof (grandTotal, tax));
 
   return (
     <div>
