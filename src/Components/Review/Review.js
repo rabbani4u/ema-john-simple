@@ -27,6 +27,7 @@ function Review() {
       product.quantity = savedCart[key];
       return product;
     });
+    console.log(cartProduct);
     setCart(cartProduct);
   }, []);
   return (
@@ -37,6 +38,7 @@ function Review() {
             handleRemoveProduct={handleRemoveProduct}
             key={pd.key}
             product={pd}
+            quantity={pd.quantity}
           />
         ))}
       </div>

@@ -3,6 +3,7 @@ import "./ReviewItem.css";
 
 function ReviewItem(props) {
   const { name, price, quantity, img, key } = props.product;
+  // console.log(props);
   return (
     <div className="review-item">
       <div className="product_image">
